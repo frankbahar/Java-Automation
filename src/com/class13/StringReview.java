@@ -16,6 +16,8 @@ public class StringReview {
 			if(str1.length()%2 == 1 && str1.length()>=3 )
 				System.out.println(str1.charAt(str1.length()/2));
 		}
+		
+		
 	}
 
 }
