@@ -94,8 +94,9 @@ public class GroupHomework {
 
 		// 6
 		Scanner scanner = new Scanner(System.in);
-		String reverse = "";
+		String reverse;
 		while (true) {
+			reverse = "";
 			System.out.println("Please enter string to check whether is palindrome or to exit q");
 			str = scanner.nextLine();
 			if (str.equals("q")) {
