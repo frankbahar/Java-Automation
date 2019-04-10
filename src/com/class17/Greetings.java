@@ -1,11 +1,13 @@
 package com.class17;
 
+import com.class17_2.NestedLoops;
+
 public class Greetings {
 
 	public static void main(String[] args) {
 		Greetings obj = new Greetings();
 		obj.hello();
-		
+		NestedLoops myobj = new NestedLoops();
 		//how to find largest number
 		int a=140;
 		int b=20;
