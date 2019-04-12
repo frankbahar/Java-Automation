@@ -1,6 +1,10 @@
 package com.class20;
 
-public class Task {
+public class AccessModifiers {
+	private String name="John";
+	String name1="Bilal";
+	protected String name2 ="Asha";
+	public String name3 = "Tetiana";
 
 	public static void main(String[] args) {
 		// Create a method createEmail().
@@ -10,7 +14,7 @@ public class Task {
 
 		System.out.println(createEmail("Frank", "Bahar", "gmail"));
 		System.out.println(createEmail("frank", "bahar", "yahoo"));
-		Task obj = new Task();
+		AccessModifiers obj = new AccessModifiers();
 		System.out.println(obj.reverseString("Frank"));
 		System.out.println("mom is palindrome " + obj.isPalindrome("mom"));
 		System.out.println("mommy is palindrome " + obj.isPalindrome("mommy"));
@@ -20,6 +24,7 @@ public class Task {
 		for(String word:words ) {
 			System.out.println(word);
 		}
+		obj.sayHello();
 	}
 
 	static String createEmail(String fName, String lName, String emailType) {
@@ -31,6 +36,7 @@ public class Task {
 		String reverse="";
 		for(int i=str.length()-1;i>=0;i--) {
 			reverse+=str.charAt(i);
+			
 		}
 		return reverse;
 	}
@@ -45,5 +51,8 @@ public class Task {
 	private String[] wordsOfString(String str) {
 		return str.split(" ");
 	}
-
+	
+	void sayHello() {
+		System.out.println("Hello students");
+	}
 }
