@@ -12,7 +12,7 @@ Please add the three names like Shiva,Sandish,Asel
 Output would be:
 
 [Shiva, Sandish, Asel]*/
-public class Main {
+public class Homework153 {
 
 	public static void main(String[] args) {
 		System.out.println(setArray());
