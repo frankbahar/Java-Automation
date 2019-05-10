@@ -1,6 +1,6 @@
 package com.class31;
 
-import java.util.ArrayList;
+import java.util.*;
 import java.util.Arrays;
 import java.util.Iterator;
 
@@ -72,5 +72,24 @@ public class Task {
 			}
 		}
 		System.out.println(numbers);
+		
+		System.out.println("-----Task5----");
+		Set<String> mydrinks = new HashSet<>(
+				Arrays.asList("Cola", "Tuno", "Orange Juice", "Water", "Su", "Ginger", "Tea", " Coffee", "Sir"));
+		
+		System.out.println("before change to water : " + mydrinks);
+		Iterator<String> itdrinks = mydrinks.iterator();
+		boolean addWater=false;
+		while(itdrinks.hasNext()) { 
+			String drink = itdrinks.next();
+			if (drink.contains("e") || drink.contains("E") || drink.contains("a") || drink.contains("A")) {
+				addWater=true;
+				itdrinks.remove();
+			}
+		}
+		if(addWater) {
+			mydrinks .add("Water");
+		}
+		System.out.println("after change to water : " + mydrinks);
 	}
 }
